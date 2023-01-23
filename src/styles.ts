@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AppContainer = styled.div`
 align-items: flex-start;
-background-color: #e317ba;
+background-color: #3179ba;
 display: flex;
 flex-direction: row;
 height: 100%;
@@ -36,3 +36,48 @@ max-width: 300px ;
 border-radius: 3px ;
 box-shadow: #091e4240 0px 1px 0px 0px;
 `;
+
+interface addItemButtonProps {
+    dark?: boolean;
+}
+export const addItemButton = styled.button<addItemButtonProps>`
+background-color: #ffff3d;
+border-radius: 3px;
+border: none;
+color: ${props => (props.dark ? '#000': '#fff')};
+cursor: pointer;
+max-width: 300px;
+padding: 10px 12px;
+text-align: left;
+transition: background 85ms ease-in;
+width: 100px;
+&:hover {
+    background-color: #ffffff52;
+}
+`;
+ export const  NewItemFromContainer = styled.div`
+ max-width: 300px;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ align-items: flex-start;
+ `;
+
+ export const NewItemButton = styled.div`
+ background-color: #5aac44;
+ border-radius: 3px;
+ border: none;
+ box-shadow: none;
+ color: #fff;
+ padding: 6px 12px;
+ text-align: center;
+ `;
+
+ export const NewItemInput = styled.div`
+ border-radius: 3px;
+ border: none;
+ box-shadow: #091e4240 0px 1px 0px 0px;
+ margin-bottom: 0.5rem;
+ padding: 5rem 1rem;
+ width: 100%;
+ `;

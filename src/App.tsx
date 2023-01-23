@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Column } from './components/Column';
 import { AppContainer } from './styles';
